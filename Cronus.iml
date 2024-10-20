@@ -10,7 +10,16 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../mysql-connector-java-8.0.28.jar!/" />
+          <root url="jar://$MODULE_DIR$/dependencias/mysql-connector-java-8.0.28.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/spring-security-crypto-3.2.10.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -1,63 +1,72 @@
-import ConexaoBD.ConnectionBD;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
 public class Main
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws NoSuchAlgorithmException, UnsupportedEncodingException, SQLException
     {
         Scanner input = new Scanner(System.in);
+        boolean running = true; // para manter o menu rodando
 
-        System.out.printf("usuário: ");
-        String nome = input.nextLine();
-
-        System.out.printf("email: ");
-        String email = input.nextLine();
-
-        System.out.printf("senha: ");
-        String senha = input.nextLine();
-
-        try
+        while (running)
         {
-            String query = "SELECT * FROM usuario WHERE email = ? AND password = ?";
-            PreparedStatement statement = ConnectionBD.getConexao().prepareStatement(query);
+            System.out.println("\n--- Bem-vindo! ---");
+            System.out.println("1. Cadastro");
+            System.out.println("2. Login");
+            System.out.println("3. Sair");
+            System.out.print("Escolha uma opção: ");
+            int opcao = input.nextInt();
+            input.nextLine();  // Consome o newline após o número\
 
-            statement.setString(1, email);
-            statement.setString(2, senha);
-
-            ResultSet rs = statement.executeQuery();
-
-            if(rs.next())
+            switch (opcao)
             {
-                System.out.println("Conta já cadastrada");
+                case 1:
+                    // Cadastro
+                    System.out.println("\n--- Cadastro de Usuário ---");
+                    System.out.printf("Usuário: ");
+                    String nomeCadastro = input.nextLine();
+
+                    System.out.printf("Email: ");
+                    String emailCadastro = input.nextLine();
+
+                    System.out.printf("Senha: ");
+                    String senhaCadastro = input.nextLine();
+
+                    // Realiza o cadastro
+                    CadastroUsuario cadastro = new CadastroUsuario();
+                    cadastro.cadastrar(nomeCadastro, emailCadastro, senhaCadastro);
+                    break;
+
+                case 2:
+                    // Login
+                    System.out.println("\n--- Login de Usuário ---");
+
+                    System.out.printf("Usuário: ");
+                    String nomeLogin = input.nextLine();
+
+                    System.out.printf("Email: ");
+                    String emailLogin = input.nextLine();
+
+                    System.out.printf("Senha: ");
+                    String senhaLogin = input.nextLine();
+
+                    // Realiza o login
+                    LoginUsuario login = new LoginUsuario();
+                    login.login(nomeLogin, emailLogin, senhaLogin);
+
+                    break;
+
+                case 3:
+                    // Sair
+                    System.out.println("Saindo...");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
             }
-            else
-            {
-                String query2 = "INSERT INTO usuario(nickname, email, password) VALUES (?,?,?)";
-                PreparedStatement statement2 = ConnectionBD.getConexao().prepareStatement(query2);
-
-                statement2.setString(1, nome);
-                statement2.setString(2, email);
-                statement2.setString(3, senha);
-
-                int rowsAffected = statement2.executeUpdate();
-
-                if(rowsAffected > 0)
-                {
-                    System.out.println("Dados inseridos com sucesso!");
-                }
-                else
-                {
-                    System.out.println("Ocorreu uma falha ao inserir os dados na tabela!");
-                }
-            }
-        }
-        catch (SQLException e)
-        {
-            e.printStackTrace();
         }
     }
 }
