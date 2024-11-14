@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1048538738135",
+    "project_id": "cronus-cb99d",
+    "storage_bucket": "cronus-cb99d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048538738135:android:ceb7bdb8c3332403172f92",
+        "android_client_info": {
+          "package_name": "com.example.teste"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8T9mavKX8GpdLdFyb6geGptKuEUgQ6ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
