@@ -3,6 +3,8 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_500">#9E9E9E </color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
@@ -11,4 +13,11 @@
     <color name="azul_2">#77d8e0</color>
     <color name="azul_3">#caeaed</color>
     <color name="azul_4">#b9e9ed</color>
+    <color name="red">#ff0000</color>
+    <color name="temaAzul">#85CEC3</color>
+    <color name="colorOnTertiary">#FFBB86FC</color>
+    <color name="color_low_priority">#D1E7E0</color>   <!-- Cor para baixa -->
+    <color name="color_medium_priority">#F3E5AB</color> <!-- Cor para média -->
+    <color name="color_high_priority">#FF8A80</color>   <!-- Cor para alta -->
+    <color name="color_default_priority">#E0E0E0</color> <!-- Cor padrão (cinza claro) -->
 </resources>

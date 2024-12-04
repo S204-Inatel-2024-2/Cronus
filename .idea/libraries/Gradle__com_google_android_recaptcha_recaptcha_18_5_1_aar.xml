@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.recaptcha:recaptcha:18.5.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9653da261f079f766f6afd035c1d6fd7/transformed/recaptcha-18.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9653da261f079f766f6afd035c1d6fd7/transformed/recaptcha-18.5.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9653da261f079f766f6afd035c1d6fd7/transformed/recaptcha-18.5.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e72b8dbb298f8cda3d43a123154f80aa/transformed/recaptcha-18.5.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e72b8dbb298f8cda3d43a123154f80aa/transformed/recaptcha-18.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e72b8dbb298f8cda3d43a123154f80aa/transformed/recaptcha-18.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.recaptcha/recaptcha/18.5.1/c11c5e8d61f7691559fc157c4629f5aa87c069ae/recaptcha-18.5.1-javadoc.jar!/" />

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/rounded_card"
+    android:elevation="4dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Ícone da atividade -->
+    <ImageView
+        android:id="@+id/icon_activity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_icon_task"
+        android:layout_marginEnd="12dp"
+        app:tint="@color/temaAzul" />
+
+    <!-- Container de informações -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Título da Atividade -->
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título da Atividade"
+            android:textStyle="bold"
+            android:textColor="@color/temaAzul"
+            android:textSize="16sp"
+            android:paddingBottom="4dp" />
+
+        <!-- Hora e Data -->
+        <TextView
+            android:id="@+id/activity_time_and_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 PM - 9 PM"
+            android:textColor="@color/gray_500"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <!-- Descrição da Atividade -->
+        <TextView
+            android:id="@+id/activity_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição da atividade detalhada."
+            android:textColor="@color/gray_700"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Botão de Conclusão -->
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Marcar como concluído"
+        app:tint="@color/red" />
+</LinearLayout>

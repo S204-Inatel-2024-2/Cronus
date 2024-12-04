@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.teste">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,21 +18,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Teste"
         tools:targetApi="31">
-
-        <!-- Declarar apenas uma atividade inicial com MAIN e LAUNCHER -->
-        <activity android:name=".LoadingActivity" android:exported="true">
+        <activity
+            android:name=".IndividualTasks"
+            android:exported="false" />
+        <activity
+            android:name=".AllTasks"
+            android:exported="false" />
+        <activity
+            android:name=".TaskPage"
+            android:exported="false" />
+        <activity
+            android:name=".OTPActivity"
+            android:exported="false" /> <!-- Declarar apenas uma atividade inicial com MAIN e LAUNCHER -->
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+                <action android:name="android.intent.action.MAIN" />
 
-        <!-- Outras atividades sem o intent-filter MAIN e LAUNCHER -->
-        <activity android:name=".MainActivity" android:exported="true"/>
-        <activity android:name=".LoginCronus" android:exported="true"/>
-        <activity android:name=".CreateActivity" android:exported="true"/>
-        <activity android:name=".RecoverPasswordActivity" android:exported="true"/>
-        <activity android:name=".HomeActivity" android:exported="true"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Outras atividades sem o intent-filter MAIN e LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginCronus"
+            android:exported="true" />
+        <activity
+            android:name=".CreateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecoverPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="true" />
     </application>
 
 </manifest>

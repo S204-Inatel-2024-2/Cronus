@@ -6,16 +6,42 @@
         <entry key="..\:/Github/Teste/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
         <entry key="..\:/Github/Teste/app/src/main/res/drawable/background_login.xml" value="0.167" />
         <entry key="..\:/Github/Teste/app/src/main/res/drawable/button.xml" value="0.167" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/card_background.xml" value="0.1065" />
         <entry key="..\:/Github/Teste/app/src/main/res/drawable/container_components.xml" value="0.167" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/container_user.xml" value="0.1" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/date_background.xml" value="0.1065" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/date_field_background.xml" value="0.15" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/decorative_background.xml" value="0.15" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/edit_text.xml" value="0.1065" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/header.xml" value="0.166" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/ic_email.xml" value="0.1755" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/ic_eye.xml" value="0.1" />
         <entry key="..\:/Github/Teste/app/src/main/res/drawable/ic_launcher_background.xml" value="0.167" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/ic_tarefas.xml" value="0.1065" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/input_background.xml" value="0.1065" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/otp_box.xml" value="0.1215" />
         <entry key="..\:/Github/Teste/app/src/main/res/drawable/rounded_button.xml" value="0.167" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/rounded_card.xml" value="0.231" />
         <entry key="..\:/Github/Teste/app/src/main/res/drawable/rounded_edittext.xml" value="0.167" />
-        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_create.xml" value="0.12092391304347826" />
-        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/show_password_selector.xml" value="0.1755" />
+        <entry key="..\:/Github/Teste/app/src/main/res/drawable/underline_edit_text.xml" value="0.1" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_all_tasks.xml" value="0.1" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_create.xml" value="0.2" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_individual_tasks.xml" value="0.14364035087719298" />
         <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_loading.xml" value="0.25" />
-        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_login_cronus.xml" value="0.25" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_login_cronus.xml" value="0.26062846580406657" />
         <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_main.xml" value="0.12092391304347826" />
-        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_recover_password.xml" value="0.12092391304347826" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_otpactivity.xml" value="0.24210526315789474" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_recover_password.xml" value="0.22" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_tarefas_page.xml" value="0.1" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/activity_task_page.xml" value="0.25" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/content_scrolling.xml" value="0.14364035087719298" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/header.xml" value="0.25" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/item_atividade.xml" value="0.25" />
+        <entry key="..\:/Github/Teste/app/src/main/res/layout/item_title_checkbox.xml" value="0.25" />
+        <entry key="..\:/Github/Teste/app/src/main/res/menu/drawer_menu.xml" value="0.18" />
+        <entry key="..\:/Github/Teste/app/src/main/res/menu/main_menu.xml" value="0.21" />
         <entry key="..\:/Github/Teste/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.167" />
       </map>
     </option>

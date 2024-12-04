@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+  <!-- Fundo da tela -->
+  <View
+      android:id="@+id/background_view"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="#F5F1E1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <!-- Título da tela -->
+  <TextView
+      android:id="@+id/recover_password_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="152dp"
+      android:text="Alteração de Senha"
+      android:textColor="#85CEC3"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Texto de instrução -->
+  <TextView
+      android:id="@+id/instructions_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="300dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="Por favor, insira o código de verificação enviado email."
+      android:textColor="#66000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.512"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/background_view"
+      app:layout_constraintWidth_percent="0.8" />
+
+
+  <!-- Campo de e-mail -->
+  <TextView
+      android:id="@+id/email_otp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="Endereço de email"
+      android:textSize="12dp"
+      android:textColor="#66000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.512"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/instructions_text"
+      app:layout_constraintWidth_percent="0.8" />
+
+  <TextView
+      android:id="@+id/email_bd_otp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="email@gmail.com"
+      android:textSize="16dp"
+      android:textColor="#CC000000"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.512"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/email_otp"
+      app:layout_constraintWidth_percent="0.8" />
+
+  <EditText
+      android:id="@+id/otp1"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/otp_box"
+      android:gravity="center"
+      android:inputType="number"
+      android:maxLength="1"
+      android:textSize="18sp"
+      android:layout_marginTop="435dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/otp2"
+      app:layout_constraintHorizontal_chainStyle="spread"
+      app:layout_constraintHorizontal_bias="0"
+      app:layout_constraintVertical_bias="0.5" />
+
+  <EditText
+      android:id="@+id/otp2"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/otp_box"
+      android:gravity="center"
+      android:inputType="number"
+      android:maxLength="1"
+      android:textSize="18sp"
+      android:layout_marginTop="435dp"
+      app:layout_constraintStart_toEndOf="@+id/otp1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/otp3"
+      app:layout_constraintHorizontal_bias="0.5" />
+
+  <EditText
+      android:id="@+id/otp3"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/otp_box"
+      android:gravity="center"
+      android:inputType="text"
+      android:digits="+0123456789"
+      android:maxLength="15"
+      android:textSize="18sp"
+      android:layout_marginTop="435dp"
+      app:layout_constraintStart_toEndOf="@+id/otp2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/otp4"
+      app:layout_constraintHorizontal_bias="0.5" />
+
+  <EditText
+      android:id="@+id/otp4"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/otp_box"
+      android:gravity="center"
+      android:inputType="number"
+      android:maxLength="1"
+      android:textSize="18sp"
+      android:layout_marginTop="435dp"
+      app:layout_constraintStart_toEndOf="@+id/otp3"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/otp5"
+      app:layout_constraintHorizontal_bias="0.5" />
+
+  <EditText
+      android:id="@+id/otp5"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/otp_box"
+      android:gravity="center"
+      android:inputType="number"
+      android:maxLength="1"
+      android:textSize="18sp"
+      android:layout_marginTop="435dp"
+      app:layout_constraintStart_toEndOf="@+id/otp4"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/otp6"
+      app:layout_constraintHorizontal_bias="0.5" />
+
+  <EditText
+      android:id="@+id/otp6"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/otp_box"
+      android:gravity="center"
+      android:inputType="number"
+      android:maxLength="1"
+      android:textSize="18sp"
+      android:layout_marginTop="435dp"
+      app:layout_constraintStart_toEndOf="@+id/otp5"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1" />
+
+  <!-- Botão de enviar -->
+  <Button
+      android:id="@+id/otp_auth_button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="88dp"
+      android:backgroundTint="#85CEC3"
+      android:text="Enviar"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.512"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/email_bd_otp"
+      app:layout_constraintWidth_percent="0.8" />
+
+  <TextView
+      android:id="@+id/nao_receu_o_codigo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Não recebeu o código?"
+      android:textColor="#CC000000"
+      android:layout_marginTop="10dp"
+      android:layout_gravity="center"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.150"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/otp_auth_button"
+      app:layout_constraintWidth_percent="0.8"/>
+
+  <TextView
+      android:id="@+id/reenviar_otp"
+      android:layout_marginStart="5dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Reenviar código"
+      android:textColor="#85CEC3"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.8"
+      app:layout_constraintStart_toStartOf="@id/nao_receu_o_codigo"
+      app:layout_constraintTop_toBottomOf="@id/otp_auth_button"
+      app:layout_constraintWidth_percent="0.8"/>
+
+  <!-- Botão de voltar para a tela de inserção do email -->
+  <Button
+      android:id="@+id/back_to_account_recover"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:padding="8dp"
+      android:text="Voltar"
+      android:textColor="#85CEC3"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:backgroundTint="#F5F1E1"
+      android:elevation="0dp"
+      android:stateListAnimator="@null"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.844"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/otp_auth_button" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

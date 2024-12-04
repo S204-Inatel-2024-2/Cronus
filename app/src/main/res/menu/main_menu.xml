@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Atividades">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/atividades"
+                    android:title="Tarefas"
+                    android:icon="@drawable/ic_tarefas">
+                </item>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Sair">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/deslogar"
+                    android:title="Deslogar"
+                    android:icon="@drawable/ic_logoff">
+                </item>
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

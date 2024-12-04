@@ -1,0 +1,24 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F2E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Container onde as atividades serão exibidas -->
+        <LinearLayout
+            android:id="@+id/checkListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp">
+            <!-- Aqui serão adicionados os "bloquinhos" de atividade -->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
